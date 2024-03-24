@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Insight: Locusts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" alt="Locust Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">GENERAL INFO</a></li> 
+                    <li><a href="cuisine.html">CUISINE</a></li>    
+                    <li><a href="media.html">MEDIA</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Locusts: A Dive Into Acrididae Culture</h1>
+            <p>An insight of the grasshopper's cousin in the wild as well as
+            <br> 
+            in books, movies, religion, and even cuisine!</p>
+            <a href="about.html" class="hero-btn">Click to Learn More</a>
+        </div>
+    </section>
+
+
+    <!-----JavaScript To Toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+        function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

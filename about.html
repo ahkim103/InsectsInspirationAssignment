@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Insight: Locusts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">GENERAL INFO</a></li> 
+                    <li><a href="cuisine.html">CUISINE</a></li>    
+                    <li><a href="media.html">MEDIA</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>General Information</h1>
+    </section>
+
+    <section class="general_info">
+        <h1>What Are Locusts?</h1>
+        <p>Locusts are large insects (Class Insecta) that belong to the Order Orthoptera,
+            which houses similar creatures including grasshoppers and crickets.</p>
+        <br>
+        <br>
+
+        <img class="info_img" src="Images/locust.jpg" alt="Locust">
+        <img class="info_img" src="Images/difference.jpg" alt="Difference">
+
+        <div class="row">
+            <div class="info_col">
+                <h3>Physical Characteristics</h3>
+                <p>Locusts are invertebretes, herbivores, and look very similar to grasshoppers with 
+                    their big hind legs. They are about 0.5-3 inches tall (about 1 paper clip) and 
+                    weight roughly 0.07 ounces (about 2 paper clips).</p>
+            </div>
+            <div class="info_col">
+                <h3>Behavior/Life Cycle</h3>
+                <p>Locusts experience two behaviors, solitary and gregarious, and can shift from one 
+                    behavior to another. On hatching, a locust emerges wingless as a nonflying nymph, 
+                    which can be either solitary or gregarious. A nymph can also change between 
+                    behavior phases before becoming a flying adult after 24 to 95 days.</p>
+            </div>
+            <div class="info_col">
+                <h3>Location</h3>
+                <p>Locusts and by extention swarms are typically found in Northern Africa, 
+                    most of South Eurasia, East Indies, Middle East, Australia 
+                    and New Zealand. It even has appeared in the USA sometimes.</p>
+            </div>
+        </div>
+
+        <img class="info_img" src="Images/swarm.jpg" alt="Swarm">
+        <img class="info_img" src="Images/map.jpg" alt="Map">
+
+        <div class="row">
+            <div class="info_col">
+                <h3>Locusts vs Grasshoppers</h3>
+                <p>Grasshoppers live completely solitary lives while locusts can change 
+                    and live in swarms. Depending on the season, locusts can either be 
+                    larger/smaller and stronger/weaker than grasshoppers.</p>
+            </div>
+            <div class="info_col">
+                <h3>Locust Swarms</h3>
+                <p>One swarm can have around 80 million locusts, with a swarm of this size 
+                    being able to eat over 400 million pounds of plants in a single day. 
+                    Locust swarms are also able to travel great distances. One swarm in the 
+                    1950s flew all the way from northwest Africa to Great Britain.</p>
+            </div>
+            <div class="info_col">
+                <h3>Why Locusts Are A Problem</h3>
+                <p>Locust swarms are extremely devastating by destorying agriculture and 
+                    devouring crops. For example, the desert locust can at times affect 
+                    approximately 20% of the world’s land surface.</p>
+            </div>
+        </div>
+
+        <h1>How Do The Swarms Happen?</h1>
+        <p>During dry seasons with low precipitation, locusts (solitary) huddle in packs in 
+            areas with vegetation. When rain comes, they produce rapidly become more crowded,
+            shifting their behavior to gregarious. Not only can even change color and body shape 
+            when they move into this phase, but thheir endurance increases and their brains 
+            get larger.</p>
+        <br>
+        <br>
+        <h1>Can We Prevent The Swarms?</h1>
+        <p>It's very difficult to manage swarms of locusts due to many reasons including the 
+            remoteness and breadth of the areas across which they’re spread and limited resources 
+            in some of the affected countries. Some experts worry that locust plagues will worsen 
+            in a warming world. Rising sea temperatures are causing prolonged bouts of wet weather, 
+            including a surge of rare cyclones in eastern Africa and the Arabian Peninsula where 
+            desert locusts thrive.</p>
+        <br>
+        <br>
+    </section>
+    
+    <!-----JavaScript To Toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>   
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Insight: Locusts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <section class="sub-sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">GENERAL INFO</a></li> 
+                    <li><a href="cuisine.html">CUISINE</a></li>    
+                    <li><a href="media.html">MEDIA</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Locusts....Cuisine?!</h1>
+    </section>
+
+    <section class="general_info">
+        <h1>Indeed. Locusts are eaten by some people!</h1>
+        <br>
+        <br>
+
+        <img class="info_img" src="Images/plate.jpg" alt="Plate">
+
+        <div class="row">
+            <div class="info_col">
+                <h3>Where Are They Eaten?</h3>
+                <p>Eating locusts was a widespread practice in areas where swarms occured, including 
+                    Africa, the Middle East, Asia, and even North America!</p>
+            </div>
+            <div class="info_col">
+                <h3>Health Benefits?</h3>
+                <p>Locusts are a good source of protein, but is missing methionine, an essential
+                    amino acid. Locusts also contain adequate amounts of iodine, phosphorus, iron, 
+                    thiamine, riboflavin, niacin, as well as traces of calcium, magnesium and selenium.
+                </p>
+            </div>
+            <div class="info_col">
+                <h3>What Do They Taste Like?</h3>
+                <p>Some people describe cooked locust as similar to smoky flavored bacon and reasonably tasty. 
+                    But be careful when trying locusts in foregin countries since sanitary praticies might be 
+                    inadequate compared to the US.</p>
+            </div>
+        </div>
+
+        <h1>Interesting Locust Dishes?</h1>
+        <p>If you're interested in locust dishes and how they may be prepared and served, here's two dishes you 
+            might find interesting: Chocolate Covered Locusts & Locust Kebabs!</p>
+        <br>
+        
+        <img class="info_img" src="Images/food.jpg" alt="Food">
+        <br>
+        <br>
+
+        <h1>But Hold Your Horses!</h1>
+        <p>Given that governments are now turning to chemicals and pesticides to manage the outbreaks and swarms, 
+            the correct advice is that people should not eat the locusts or use them for animal feed since these
+            chemicals pose a major health risk.</p>
+        <br>
+        <br>
+    </section>
+
+    <!-----JavaScript To Toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>  
+    
+</body>
+</html>
